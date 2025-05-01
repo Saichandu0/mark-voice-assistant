@@ -21,8 +21,10 @@ wheels/
 *.egg
 
 # Virtual Environment
-venv/
+.env
+.venv
 env/
+venv/
 ENV/
 
 # IDE
@@ -36,4 +38,7 @@ ENV/
 Thumbs.db
 
 # Streamlit
-.streamlit/ 
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+# Allow config.toml
+!.streamlit/config.toml 
